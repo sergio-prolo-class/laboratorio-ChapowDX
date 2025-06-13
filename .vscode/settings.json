@@ -2,5 +2,8 @@
     "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
         "clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling"
     ],
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "stdio.h": "c"
+    }
 }
