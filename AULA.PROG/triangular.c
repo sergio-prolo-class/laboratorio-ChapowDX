@@ -6,11 +6,23 @@ bool eh_triangular(int n);
 int main()
 {
     int n;
-    printf("Leia um inteiro positivo: ");
+    printf("Entre com um inteiro positivo: ");
     scanf("%d", &n);
     if (eh_triangular(n)) {
-        printf("É Triangular!\n");
+        printf("É triangular.\n");
     } else {
-        printf("Não é triangular!");
+        printf("Não é triangular.\n");
     }
+    return 0;
+}
+
+bool eh_triangular(int n)
+{
+    int i = 1;
+    int soma = 0;
+    while (soma < n) {
+        soma += i;
+        i++;
+    }
+    return soma == n;
 }
